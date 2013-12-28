@@ -1,0 +1,6 @@
+<%if @status=="paypal_success"%>
+<%= link_to :list_items , items_path%>
+<%else%>
+<%= paypal_subscribe_form :button => true, :value => "Subscribe to see item list",:html => {:class=> "btn btn-alert"} %>
+<%end%> 
+<%=link_to :add_item , new_item_path%>

@@ -1,0 +1,2 @@
+module Transactions::PaypalHelper
+end

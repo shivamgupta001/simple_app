@@ -1,0 +1,15 @@
+<br/><br/>
+<table>
+<%if @items.count!=0%>
+ <%="<tr><th>Item</th>
+      <th>Actions</th>
+  </tr>".html_safe%>
+<%else%>
+  <%="List is empty".html_safe%>
+<%end%>
+<br/>
+<%@items.each do |item|%>
+<tr><td><%=item.name%></td><td><%=link_to :edit ,edit_item_path(item)%><td/><td><%=link_to :destroy , item_path(item), :method=>:delete , :confirm=>"Are you Sure"%></td></tr>
+<%end%>
+</table>
+<%=link_to :add_item , new_item_path%>

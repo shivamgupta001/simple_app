@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  price: 1
+  released_at: 2013-12-27 16:06:54
+
+two:
+  name: MyString
+  price: 1
+  released_at: 2013-12-27 16:06:54
